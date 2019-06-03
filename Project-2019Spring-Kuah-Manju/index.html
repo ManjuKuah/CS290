@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width">
+		<meta name = "description" content = "Web Project">
+		<meta name = "keywords" content = "CS 290 Web Project">
+		<meta name = "author" content = "Manju Kuah">
+		<title> WEB DESIGN | HOME </title>
+		<link rel = "stylesheet" href = "./css/style.css">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+	</head>
+	<body>
+		<header>
+			<div class = "container">
+				<div id = "branding">
+					<h1><span class = "highlight">CS 290</span> Web Project</h1>
+				</div>
+				<nav>
+					<ul>
+						<li class = "current"><a href = "index.html">HOME</a></li>
+						<li><a href = "about.html">ABOUT</a></li>
+						<li><a href = "videos.html">VIDEOS</a></li>
+						<li><a href = "improve.html">IMPROVE</a></li>
+					</ul>
+					
+			</div>
+		</header>
+
+            
+	<div class="container">
+	<div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+	<ol class="carousel-indicators">
+      <li class="item1 active"></li>
+      <li class="item2"></li>
+      <li class="item3"></li>
+      <li class="item4"></li>
+	  <li class="item5"></li>
+	  <li class="item6"></li>
+	  
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="./img/home1.jpg" alt="Home" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="./img/home2.jpg" alt="Home" width="460" height="345">
+      </div>
+    
+      <div class="item active">
+        <img src="./img/home3.jpg" alt="Home" width="460" height="345">
+      </div>
+
+      <div class="item active">
+        <img src="./img/home4.jpg" alt="Home" width="460" height="345">
+      </div>
+	  
+	  <div class="item active">
+        <img src="./img/home5.jpg" alt="Home" width="460" height="345">
+      </div>
+	  
+	  <div class="item active">
+        <img src="./img/home6.jpg" alt="Home" width="460" height="345">
+      </div>
+	  
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    // Activate Carousel
+    $("#myCarousel").carousel();
+    
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+        $("#myCarousel").carousel(0);
+    });
+    $(".item2").click(function(){
+        $("#myCarousel").carousel(1);
+    });
+    $(".item3").click(function(){
+        $("#myCarousel").carousel(2);
+    });
+    $(".item4").click(function(){
+        $("#myCarousel").carousel(3);
+    });
+    $(".item5").click(function(){
+        $("#myCarousel").carousel(4);
+    });
+    $(".item6").click(function(){
+        $("#myCarousel").carousel(5);
+    });
+    
+    // Enable Carousel Controls
+    $(".left").click(function(){
+        $("#myCarousel").carousel("prev");
+    });
+    $(".right").click(function(){
+        $("#myCarousel").carousel("next");
+    });
+});
+</script>
+<!----------------------------------------------------------------------------------->
+
+	<div id ='text'>
+	<p>
+Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago.
+
+CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.).
+
+"Counter-Strike took the gaming industry by surprise when the unlikely MOD became the most played online PC action game in the world almost immediately after its release in August 1999," said Doug Lombardi at Valve. "For the past 12 years, it has continued to be one of the most-played games in the world, headline competitive gaming tournaments and selling over 25 million units worldwide across the franchise. CS: GO promises to expand on CS' award-winning gameplay and deliver it to gamers on the PC as well as the next gen consoles and the Mac."</p>
+
+	<center><p><i>From the Official Website</i></p></center>
+	
+	</div>
+
+
+		<footer>
+			<div class = "container">
+				<nav>
+					<ul>
+						<li><a href = "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/">Official Website</a></li>
+						<li><a href = "https://blog.counter-strike.net/">Blog</a></li>
+						<li><a href = "https://www.reddit.com/r/csgo/">Reddit</a></li>
+					</ul>
+			</div>
+
+		</footer>
+		
+	</body>
+</html>
